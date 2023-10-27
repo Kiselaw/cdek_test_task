@@ -1,4 +1,3 @@
-# import scrapy
 import json
 import openpyxl
 from scrapy import Request, Spider
@@ -7,7 +6,7 @@ from .constants import *  # Не совсем по PEP, но в данном с�
 
 class CdekExpressSpider(Spider):
     name = "cdek_express"
-    handle_httpstatus_list = [422]
+    # handle_httpstatus_list = [422] - оставлено на случай изменений структуры тела у запросов
     custom_settings = {
         'DOWNLOAD_TIMEOUT': 60,
         'CONCURRENT_REQUESTS': 10,

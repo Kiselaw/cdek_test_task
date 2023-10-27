@@ -30,6 +30,9 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 **Запуск паука и парсинг данных**:
+
+Необходимо перейти в директорию scrapy_сdek и ввести команду:
+
 ```bash
 scrapy crawl cdek_express
 ```
